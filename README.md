@@ -1,4 +1,4 @@
-[![Build Status](https://semaphoreci.com/api/v1/netanel7799/ngx-take-until-destroy/branches/master/badge.svg)](https://semaphoreci.com/netanel7799/rxjs-event-emitter)
+[![Build Status](https://semaphoreci.com/api/v1/netanel7799/rxjs-event-emitter/branches/master/badge.svg)](https://semaphoreci.com/netanel7799/rxjs-event-emitter)
 [![npm](https://img.shields.io/npm/l/ngx-take-until-destroy.svg)]()
 
 # Event Emitter
