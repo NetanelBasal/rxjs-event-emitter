@@ -1,0 +1,44 @@
+{
+  "name": "rxjs-event-emitter",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/es5/index.js",
+  "es2015": "dist/index.js",
+  "description": "Event Emitter based on RxJS",
+  "license": "MIT",
+  "scripts": {
+    "clearDist": "rm -rf ./dist",
+    "clear": "npm run clearDist",
+    "compile": "tsc --p tsconfig.es5.json && tsc --p tsconfig.es2015.json && tsc --p tsconfig.umd.json",
+    "precompile": "npm run clearDist",
+    "prepublish": "clear && npm run compile",
+    "test": "npm run clear && npm run compile && jest"
+  },
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "maintainers": [
+    "Netanel Basal"
+  ],
+  "repository": {
+    "url": "https://github.com/NetanelBasal/rxjs-event-emitter"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/__tests__/.*\\.(ts|js)$"
+  },
+  "devDependencies": {
+    "rxjs": "^5.3.0",
+    "typescript": "^2.6.1",
+    "@types/jest": "^21.1.4",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.1.3"
+  }
+}
