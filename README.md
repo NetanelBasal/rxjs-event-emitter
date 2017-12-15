@@ -8,7 +8,12 @@
 ## Installation
 `npm install rxjs-event-emitter --save`
 
-## Usage
+## API
+- `on(eventName, callback)` - listen to event 
+- `emit(eventName, data)` - emit event
+- `destroy()` - Destroy all listeners
+
+## Example
 ```ts
 import { EventEmitter } from "rxjs-event-emitter";
 
@@ -22,7 +27,5 @@ emitter.emit('event', data);
 
 subscription.unsubscribe();
 
-// Destory all listeners
-emitter.destroy();
 ```
 
